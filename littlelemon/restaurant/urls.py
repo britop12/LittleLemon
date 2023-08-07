@@ -5,5 +5,5 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('menu/', views.MenuItemView.as_view()),
-    path('menu/<int:pk>', views.MenuItemView.as_view()),
+    path('menu/<int:pk>', views.MenuItemDetailView.as_view()),
 ]
